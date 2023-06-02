@@ -96,16 +96,6 @@ header ul {
   align-items: center;
 }
 
-.main h1 {
-  margin-top: 5%;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 4rem;
-  line-height: 52px;
-  text-align: center;
-  color: var(--color-dark-blue);
-}
-
 .main .h1-sub {
   width: 80%;
   font-style: normal;
@@ -114,6 +104,16 @@ header ul {
   line-height: 52px;
   text-align: center;
   color: var(--color-main);
+}
+
+.main h1 {
+  margin-top: 5%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 52px;
+  text-align: center;
+  color: var(--color-dark-blue);
 }
 
 p,
