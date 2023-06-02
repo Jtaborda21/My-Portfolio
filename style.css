@@ -129,10 +129,6 @@ p,
   color: var(--color-dark-blue);
 }
 
-.span-br2 {
-  display: none;
-}
-
 .main-media {
   width: 100%;
   display: flex;
