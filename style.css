@@ -4,8 +4,14 @@
   --color-dark-blue: #172b4d;
   --html-test-background: #fff;
   --color-button-hover: #36b37f36;
+  --color-button-enable: #36b37f;
+  --color-button-pressed: #008552;
   --sect-max-width: 2160px;
   --wrap-max-width: 1280px;
+  --color-card-bg: #ebf0ee;
+  --color-card-br: #d0d9d4;
+  --color-card-text: #3a4a42;
+  --color-nav-text: #344563;
 }
 
 hr {
@@ -96,16 +102,6 @@ header ul {
   align-items: center;
 }
 
-.main h1 {
-  margin-top: 5%;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 4rem;
-  line-height: 52px;
-  text-align: center;
-  color: var(--color-dark-blue);
-}
-
 .main .h1-sub {
   width: 80%;
   font-style: normal;
@@ -114,6 +110,16 @@ header ul {
   line-height: 52px;
   text-align: center;
   color: var(--color-main);
+}
+
+.main h1 {
+  margin-top: 5%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 52px;
+  text-align: center;
+  color: var(--color-dark-blue);
 }
 
 p,
@@ -127,10 +133,6 @@ p,
   line-height: 2.8rem;
   text-align: center;
   color: var(--color-dark-blue);
-}
-
-.span-br2 {
-  display: none;
 }
 
 .main-media {
@@ -230,10 +232,6 @@ p,
     background-image: url("Visual/header-bg-mobile.svg");
   }
 
-  .span_br {
-    display: none;
-  }
-
   p,
   .main p {
     width: 85%;
@@ -245,4 +243,272 @@ p,
     margin: 5% auto 5% auto;
     border-radius: 50%;
   }
+}
+
+#projects {
+  background-color: var(--html-test-background);
+}
+
+.projects {
+  width: 100vw;
+  max-width: var(--sect-max-width);
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color-white);
+}
+
+h2,
+.projects-title {
+  max-width: 463px;
+  margin: 7% auto 3% auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5.2rem;
+  color: var(--color-dark-blue);
+  text-align: center;
+}
+
+.projects-icon {
+  width: 48px;
+  margin: 0 auto 10% auto;
+  border-radius: 24px;
+  height: 5px;
+  background-color: var(--color-main);
+}
+
+.projects-wrap,
+.wrapper {
+  width: 100vw;
+  max-width: var(--wrap-max-width);
+  margin-bottom: 30px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(327px, 1fr));
+  row-gap: 32px;
+}
+
+.project-card {
+  width: 327px;
+  height: 474px;
+  position: relative;
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-card-br);
+  border-radius: 8px;
+}
+
+.project:last-child {
+  display: none;
+}
+
+.card-wrap {
+  width: 327px;
+  height: 222px;
+  position: absolute;
+  left: calc(50% - 327px / 2);
+  bottom: -1px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background: var(--color-white);
+  border-left: 1px solid var(--color-card-br);
+  border-right: 1px solid var(--color-card-br);
+  border-bottom: 1px solid var(--color-card-br);
+  border-radius: 8px;
+}
+
+h4,
+.card-title {
+  width: 100%;
+  height: 48px;
+  margin: 0 0 16px 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  text-align: center;
+  color: var(--color-card-text);
+}
+
+.card-tags,
+.tags {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 8px 0;
+  list-style: none;
+  float: left;
+}
+
+.card-tags li,
+.tags li {
+  width: auto;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  text-align: center;
+  color: var(--color-card-text);
+  background: #ebf0ee;
+  border-radius: 4px;
+}
+
+.project-card-descrip {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-nav-text);
+}
+
+button,
+button a {
+  max-height: 48px;
+  padding: 0 5%;
+  margin: 0 12px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+button,
+.card-button {
+  width: auto;
+  height: 48px;
+  border-style: none;
+  margin-top: 8px;
+  background: var(--color-button-enable);
+  border-radius: 4px;
+}
+
+button:hover {
+  box-shadow: 0 8px 16px var(--color-button-hover);
+}
+
+button:active {
+  background: var(--color-button-pressed);
+}
+
+.about-button a {
+  padding: 0;
+}
+
+.header-active ul li a {
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+  text-decoration: none;
+  color: var(--color-card-text);
+}
+
+#about {
+  background-color: var(--html-test-background);
+}
+
+.about-me {
+  width: 100vw;
+  max-width: var(--sect-max-width);
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color-white);
+}
+
+.about-container {
+  width: 100vw;
+  max-width: var(--sect-max-width);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+  justify-content: center;
+  background-image:
+    url("Visual/about-left-mobile.svg"),
+    url("Visual/about-right-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 17%, 17%;
+  background-position: bottom left, top right;
+}
+
+.about-button {
+  margin: 5% auto 0 auto;
+  padding: 0;
+}
+
+.about-me__wrapper {
+  margin-top: 60px;
+}
+
+.about-card-container {
+  box-sizing: border-box;
+  height: 316px;
+  width: 327px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  background: #ebf0ee;
+  border: 1px solid #c1c7d0;
+}
+
+.about-languages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-icon-holder {
+  height: 80px;
+  width: 80px;
+  margin: 40px auto 28px auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
+}
+
+.about-title {
+  width: 100%;
+  height: 48px;
+  margin: 0 0 10px 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  text-align: center;
+  color: var(--color-card-text);
+}
+
+.about-card-tags {
+  width: 90%;
+  justify-content: center;
+  gap: 8px;
+}
+
+.about-description {
+  width: 68vw;
+}
+
+.about-card-tags li {
+  height: 40px;
+  background: #fff;
+  border-radius: 8px;
+  color: #36b37e;
 }
