@@ -371,6 +371,20 @@ h4,
 }
 
 button,
+button a {
+  max-height: 48px;
+  padding: 0 5%;
+  margin: 0 12px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+button,
 .card-button {
   width: auto;
   height: 48px;
@@ -388,6 +402,10 @@ button:active {
   background: var(--color-button-pressed);
 }
 
+.about-button a {
+  padding: 0;
+}
+
 .header-active ul li a {
   font-weight: 600;
   font-size: 3.2rem;
@@ -396,21 +414,6 @@ button:active {
   color: var(--color-card-text);
 }
 
-button,
-button a {
-  max-height: 48px;
-  padding: 0 5%;
-  margin: 0 12px;
-  text-decoration: none;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  color: var(--color-white);
-  cursor: pointer;
-}
-
-/* AQUI VOY :>*/
 #about {
   background-color: var(--html-test-background);
 }
@@ -444,10 +447,6 @@ button a {
 
 .about-button {
   margin: 5% auto 0 auto;
-  padding: 0;
-}
-
-.about-button a {
   padding: 0;
 }
 
