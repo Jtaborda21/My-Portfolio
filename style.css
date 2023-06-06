@@ -565,7 +565,6 @@ button[type="submit"] {
   margin: 0 auto;
   padding: 0 12px;
   cursor: pointer;
-  align-items: center;
 }
 
 input[type="text"],
