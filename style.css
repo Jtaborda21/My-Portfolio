@@ -192,7 +192,62 @@ p,
     position: relative;
   }
 
+  .header {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    background-color: transparent;
+  }
 
+  .header-active {
+    display: none;
+  }
+
+  header ul {
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  header ul a {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-decoration: none;
+    color: var(--color-nav-text);
+  }
+
+  .burger,
+  .burger-active {
+    display: none;
+  }
+
+  .main {
+    min-height: 720px;
+    max-height: 1180px;
+    justify-content: center;
+    background-image: url("Visual/header-bg-mobile.svg");
+  }
+
+  p,
+  .main p {
+    width: 85%;
+    max-width: 600px;
+    margin-top: 1%;
+  }
+
+  .main-button-down {
+    margin: 5% auto 5% auto;
+    border-radius: 50%;
+  }
+}
+
+#projects {
+  background-color: var(--html-test-background);
+}
 
 .projects {
   width: 100vw;
