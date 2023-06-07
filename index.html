@@ -263,22 +263,21 @@
           </div>
 
           <form action="https://formspree.io/f/xwkjdndo" class="contact-container" method="post">
-            <ul>
-              <li class="contact-full-name">
-                <label for="full-name" class="label">Full name:</label>
-                <input type="text" id="full-name" name="full-name" placeholder="Full name" maxlength="30" required>
-              </li>
-              <li class="contact-email">
-                <label for="email" class="label">Email address:</label>
-                <input type="text" id="email" name="email" placeholder="Email address" required>
-              </li>
-              <li class="contact-message">
-                <label for="message" class="label">Your message:</label>
-                <li class="contact__form__element message">
-                  <label class="label" for="message">Your message:</label>
-                  <textarea id="message" name="message" placeholder="Hey I'd like to connect to..." maxlength="500" required></textarea>
-              </li>
-            </ul>
+
+              <ul>
+                <li class="contact-full-name">
+                  <input type="text" id="full-name" name="full-name" placeholder="Full name" maxlength="30" aria-label="Full name" required>
+                </li>
+
+                <li class="contact-email">
+                  <input type="text" id="email" name="email" placeholder="Email address" aria-label="Email address" required>
+                </li>
+
+                <li class="contact-message">
+                  <textarea id="message" name="message" placeholder="Hey I'd like to connect to..." maxlength="500" aria-label="Your message" required></textarea>
+                </li>
+                
+              </ul>          
             <button type="submit">Get in touch!</button>
           </form>
           

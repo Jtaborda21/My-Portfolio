@@ -460,7 +460,7 @@ button:active {
   margin: auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "full-name" "email" "message";
+  grid-template-areas: "full-name" "email" "message" "submit";
   gap: 24px;
   list-style: none;
 }
