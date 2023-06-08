@@ -585,6 +585,14 @@ footer {
     list-style: none;
   }
 
+  .main h1,
+  .main .h1-sub {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: calc(37px / 100);
+  }
+
   header ul a {
     font-weight: 600;
     font-size: 1.5rem;
@@ -599,21 +607,31 @@ footer {
   }
 
   .main {
+    height: 1407px;
     min-height: 720px;
     max-height: 1180px;
     justify-content: center;
-    background-image: url("Visual/header-bg-mobile.svg");
+    background-image: url("Visual/header-bg-desktop.svg");
+  }
+
+  .span-br {
+    display: none;
   }
 
   p,
   .main p {
-    width: 85%;
-    max-width: 600px;
-    margin-top: 1%;
+    width: 100%;
+    margin-top: 2%;
+    max-width: 950px;
+    line-height: 3.2rem;
   }
 
   .main-button-down {
     margin: 5% auto 5% auto;
     border-radius: 50%;
+  }
+
+  .projects-icon {
+    display: none;
   }
 }
