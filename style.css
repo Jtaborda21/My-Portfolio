@@ -164,6 +164,87 @@ p,
   box-shadow: var(--color-button-hover) 0 0 0 0;
 }
 
+@media screen and (min-width: 375px) {
+  header ul {
+    width: 255px;
+  }
+
+  .main {
+    height: 720px;
+  }
+
+  p,
+  .main p {
+    max-width: 700px;
+  }
+
+  .main-media ul {
+    margin-bottom: 0;
+  }
+
+  .main-button-down {
+    margin-top: 15%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    position: relative;
+  }
+
+  .header {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    background-color: transparent;
+  }
+
+  .header-active {
+    display: none;
+  }
+
+  header ul {
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  header ul a {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-decoration: none;
+    color: var(--color-nav-text);
+  }
+
+  .burger,
+  .burger-active {
+    display: none;
+  }
+
+  .main {
+    min-height: 720px;
+    max-height: 1180px;
+    justify-content: center;
+    background-image: url("Visual/header-bg-mobile.svg");
+  }
+
+  p,
+  .main p {
+    width: 85%;
+    max-width: 600px;
+    margin-top: 1%;
+  }
+
+  .main-button-down {
+    margin: 5% auto 5% auto;
+    border-radius: 50%;
+  }
+}
+
 #projects {
   background-color: var(--html-test-background);
 }
@@ -430,225 +511,4 @@ button:active {
   background: #fff;
   border-radius: 8px;
   color: #36b37e;
-}
-
-.contact-form {
-  background-color: #fff;
-  max-width: var(--sect-max-width);
-  margin: 4% auto 0 auto;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 24px;
-  background-image: url("Visual/contact-right-mobile.svg");
-  background-repeat: no-repeat;
-  background-size: 17%;
-  background-position: bottom right;
-}
-
-.contact-form h2 {
-  margin-bottom: 5px;
-}
-
-.contact-container {
-  width: 90%;
-  max-width: 684px;
-}
-
-.contact-container ul {
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "full-name" "email" "message" "submit";
-  gap: 24px;
-  list-style: none;
-}
-
-button[type="submit"] {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  padding: 0 12px;
-  cursor: pointer;
-}
-
-.first-name,
-.last-name {
-  display: none;
-}
-
-input[type="text"],
-textarea {
-  width: 100%;
-  height: 48px;
-  padding-left: 16px;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  border-radius: 4px;
-  background: #fff;
-  border: 1px solid #d0d9d4;
-  resize: none;
-}
-
-textarea {
-  width: 100%;
-  height: 114px;
-  padding: 12px;
-  font-style: normal;
-  font-family: "Inter", sans-serif;
-  background-image: url(Visual/Icon\ -\ Resizer\ Handle.png);
-  background-repeat: no-repeat;
-  background-position: bottom right;
-}
-
-label {
-  display: none;
-}
-
-.contact-my-email {
-  margin: 0 auto 8% auto;
-}
-
-footer {
-  background-color: var(--html-test-background);
-}
-
-.footer {
-  max-width: var(--sect-max-width);
-  height: 72px;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-media ul {
-  margin: 0;
-}
-
-@media screen and (min-width: 375px) {
-  header ul {
-    width: 255px;
-  }
-
-  .main {
-    height: 720px;
-  }
-
-  p,
-  .main p {
-    max-width: 700px;
-  }
-
-  .main-media ul {
-    margin-bottom: 0;
-  }
-
-  .main-button-down {
-    margin-top: 15%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  header {
-    position: relative;
-  }
-
-  .header {
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    justify-content: center;
-    background-color: transparent;
-  }
-
-  .header-active {
-    display: none;
-  }
-
-  header ul {
-    width: 220px;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-  }
-
-  .main h1,
-  .main .h1-sub {
-    font-weight: 800;
-    font-size: 48px;
-    line-height: 60px;
-    letter-spacing: calc(37px / 100);
-  }
-
-  header ul a {
-    font-weight: 600;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    text-decoration: none;
-    color: var(--color-nav-text);
-  }
-
-  .burger,
-  .burger-active {
-    display: none;
-  }
-
-  .main {
-    height: 1407px;
-    min-height: 720px;
-    max-height: 1180px;
-    justify-content: center;
-    background-image: url("Visual/header-bg-desktop.svg");
-  }
-
-  .span-br {
-    display: none;
-  }
-
-  p,
-  .main p {
-    width: 100%;
-    margin-top: 2%;
-    max-width: 950px;
-    line-height: 3.2rem;
-  }
-
-  .main-button-down {
-    margin: 5% auto 5% auto;
-    border-radius: 50%;
-  }
-
-  .projects-icon {
-    display: none;
-  }
-
-  .full-name {
-    display: none;
-  }
-
-  .first-name,
-  .last-name {
-    display: block;
-  }
-
-  .title h2 {
-    font-size: 3rem;
-  }
-
-  .contact-my-email {
-    display: none;
-  }
-
-  .contact-form ul {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "first-name last-name" "email email" "message message" "submit submit";
-    gap: 24px;
-    list-style: none;
-  }
 }
