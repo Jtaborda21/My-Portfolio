@@ -465,18 +465,6 @@ button:active {
   list-style: none;
 }
 
-.full-name {
-  grid-area: full-name;
-}
-
-.email {
-  grid-area: email;
-}
-
-.message {
-  grid-area: message;
-}
-
 button[type="submit"] {
   display: flex;
   justify-content: center;
@@ -484,6 +472,11 @@ button[type="submit"] {
   margin: 0 auto;
   padding: 0 12px;
   cursor: pointer;
+}
+
+.first-name,
+.last-name {
+  display: none;
 }
 
 input[type="text"],
@@ -633,5 +626,29 @@ footer {
 
   .projects-icon {
     display: none;
+  }
+
+  .full-name {
+    display: none;
+  }
+
+  .first-name,
+  .last-name {
+    display: block;
+  }
+
+  .title h2 {
+    font-size: 3rem;
+  }
+
+  .contact-my-email {
+    display: none;
+  }
+
+  .contact-form ul {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "first-name last-name" "email email" "message message" "submit submit";
+    gap: 24px;
+    list-style: none;
   }
 }
