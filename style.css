@@ -645,10 +645,25 @@ footer {
     display: none;
   }
 
+  .last-name {
+    display: none;
+  }
+
   .contact-form ul {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "first-name last-name" "email email" "message message" "submit submit";
     gap: 24px;
     list-style: none;
+  }
+
+  button[type="submit"] {
+    justify-content: flex-start;
+    margin: 0 auto 15% 0;
+  }
+
+  .contact-form {
+    min-height: 600px;
+    background-image: url(Visual/contact-right-desktop.svg), url(Visual/contact-left-desktop-1.svg), url(Visual/contact-left-desktop-2.svg);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: bottom right, bottom left, 15% bottom;
   }
 }
