@@ -645,10 +645,6 @@ footer {
     display: none;
   }
 
-  .last-name {
-    display: none;
-  }
-
   .contact-form ul {
     gap: 24px;
     list-style: none;
