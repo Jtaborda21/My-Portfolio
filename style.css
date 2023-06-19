@@ -69,6 +69,18 @@ header ul {
   cursor: pointer;
 }
 
+.burger-container {
+  position: absolute;
+  display: fixed;
+  top: 0px;
+  right: 0px;
+  left: 100%;
+  background-color: #fff;
+  bottom: 0px;
+  width: 100%;
+  color: #172b4d;
+}
+
 .burger .bar {
   border-radius: 20px;
   height: 2px;
